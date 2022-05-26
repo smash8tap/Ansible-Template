@@ -1,0 +1,28 @@
+# Template
+- name: Copy tool to your desired location
+  copy:
+    src: 'files/toolname/tool'
+    dest: location
+    mode: 755
+
+- name: Run it
+  shell: shell command
+
+  # Windows Version
+- name: Copy tool to your desired location - Windows
+  win_copy:
+    src: 'files/template/template.py'
+    dest: location
+
+
+- name: Run executables
+  win_shell: 'template.py'
+  async: 45
+  poll: 0
+  args:
+    chdir: "location"
+
+
+
+
+

@@ -1,0 +1,13 @@
+ansible_connection: ssh
+become_method: sudo
+become_user: root
+become: yes
+ansible_user: testuser
+ansible_password: testuser
+host_key_checking: False
+ansible_sudo_pass: "testuser"
+
+
+# Windows version
+# Your research time, Look how to deploy to a windows machine
+

@@ -1,0 +1,8 @@
+---
+- name: Template
+  hosts: all
+  become: yes
+  roles:
+    - template
+  tags:
+    - c2
